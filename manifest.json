@@ -6,7 +6,7 @@
 	"version": "1.0",
 
 	"permissions": [
-		"http://portal.acttv.in/index.php/myusage"
+		"http://portal.acttv.in/"
 	],
 
 	"icons": {

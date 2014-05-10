@@ -2,64 +2,20 @@
 <html>
   <head>
     <title>ACT Broadband Meter</title>
-    <style>
-        body {
-        min-width: 200px;
-        overflow-x: hidden;
-        }
-
-        #first-row{
-            width: 100%;
-            height: 50px;
-        }
-
-        .half{
-            width: 50%;
-            display: inline-block;
-            float: left;
-        }
-
-        .hint{
-            color: #C2C2C2;
-            font-size: 12px;
-        }
-
-        #consumed{
-            padding-top: 6px;
-            font-size: 24px;
-            color: #FF7C15;
-        }
-
-        #fup{
-            padding-top: 6px;
-            font-size: 24px;
-            color: #1569FF;
-        }
-
-        #bb-meter{
-            font-size: 57px;
-            text-align: center;
-            background-color: #0C97D8;
-            color: #fff;
-            margin: 22px 10px;
-            padding: 10px 0;
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="./style.css" type="text/css" media="screen" />
     <script src="popup.js"></script>
   </head>
-<body>
+  <body class="loading">
     <div id="first-row">
-       <div class="half">
-           <div class="hint">Consumed</div>
-           <div id="consumed"></div>
-       </div>
-       <div class="half">
-           <div class="hint">FUP</div>
-           <div id="fup"></div>
-       </div>
+      <div class="half">
+        <div class="hint">Consumed</div>
+        <div id="consumed"></div>
+      </div>
+      <div class="half">
+        <div class="hint">FUP</div>
+        <div id="fup"></div>
+      </div>
     </div>
     <div id="bb-meter"></div>
-   </body>
+  </body>
 </html>
