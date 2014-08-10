@@ -37,7 +37,34 @@ body {
     padding: 10px 0;
 }
 
+#log {
+    display: none;
+}
+
 .loading #first-row,
 .loading #bb-meter {
-    visibility: hidden
+    visibility: hidden;
+    display: none;
+}
+
+.loading #log {
+    display: block;
+}
+
+#log span {
+    display: block;
+    width: 300px;
+    font-size: smaller;
+}
+
+#log span.info {
+    color: blue;
+}
+
+#log span.error {
+    color: red;
+}
+
+#log span.success {
+    color: green;
 }

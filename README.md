@@ -27,4 +27,4 @@ MIT
 
 Preview
 ---
-![](http://i.imgur.com/LQZuEqC.png)
+![](./LQZuEqC.png)
