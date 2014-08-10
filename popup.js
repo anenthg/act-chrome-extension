@@ -8,9 +8,10 @@ var packageHandler,
 render = function (consumed, fup) {
 
     document.body.classList.remove("loading");
+    document.getElementById("spinner").remove();
     document.getElementById("log").remove();
-    document.getElementById("fup").innerHTML = fup;
-    document.getElementById("consumed").innerHTML = consumed;
+    document.getElementById("fup").innerHTML = fup + '<span class="datalimit">GB</span>';
+    document.getElementById("consumed").innerHTML = consumed + '<span class="datalimit">GB</span>';
     document.getElementById("bb-meter").innerHTML =
         (((fup - consumed) / fup) * 100).toFixed(2) + "%";
 
